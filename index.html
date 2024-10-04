@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Калькулятор</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="wrapper_display">
+        <button onclick="clearDisplay()" class="clear">C</button>
+        <input type="text" id="display" class="display" disabled />
+      </div>
+      <div class="buttons">
+        <button onclick="appendNumber('7')" class="btnStyle">7</button>
+        <button onclick="appendNumber('8')" class="btnStyle">8</button>
+        <button onclick="appendNumber('9')" class="btnStyle">9</button>
+        <button onclick="setOperator('/')" class="btnStyle">/</button>
+
+        <button onclick="appendNumber('4')" class="btnStyle">4</button>
+        <button onclick="appendNumber('5')" class="btnStyle">5</button>
+        <button onclick="appendNumber('6')" class="btnStyle">6</button>
+        <button onclick="setOperator('*')" class="btnStyle">*</button>
+
+        <button onclick="appendNumber('1')" class="btnStyle">1</button>
+        <button onclick="appendNumber('2')" class="btnStyle">2</button>
+        <button onclick="appendNumber('3')" class="btnStyle">3</button>
+        <button onclick="setOperator('-')" class="btnStyle">-</button>
+
+        <button onclick="appendNumber('0')" class="btnStyle">0</button>
+        <button onclick="appendDecimal()" class="btnStyle">.</button>
+        <button onclick="calculate()" class="equal">=</button>
+        <button onclick="setOperator('+')" class="btnStyle">+</button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
