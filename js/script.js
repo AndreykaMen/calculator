@@ -49,7 +49,7 @@ function calculate() {
     i++
   ) {
     if (parseInt(resultPre[i]) !== 0) {
-      display.value = result;
+      display.value = parseFloat(result);
       break;
     } else {
       display.value = resultPre;
